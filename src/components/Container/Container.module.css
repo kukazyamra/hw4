@@ -5,10 +5,6 @@
 }
 
 .container > div{
-    width: 200px;
-    height:200px;
-    text-align: center;
     border: 2px solid blueviolet;
     border-radius: 25%;
-
 }

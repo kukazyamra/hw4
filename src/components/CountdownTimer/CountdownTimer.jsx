@@ -1,6 +1,6 @@
 import React from 'react';
 import {useState, useEffect} from "react";
-
+import classes from './CountdownTimer.module.css'
 
 function CountdownTimer() {
     const [countdown, setCountdown] = useState(10);
@@ -21,7 +21,7 @@ function CountdownTimer() {
 
 
     return (
-        <div>
+        <div className={classes.timer}>
             <h1>Таймер</h1>
             <p>{countdown}</p>
         </div>
