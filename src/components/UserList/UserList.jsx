@@ -12,7 +12,7 @@ function UserList() {
 
     return (
         <div className={classes.userlist}>
-            <h1>UserList</h1>
+            <h1>Список пользователей</h1>
             {users.map((user) => (
                 <p key={user.id}><b>Имя</b>: {user.name}; <b>email</b>: {user.email}</p>
             ))}

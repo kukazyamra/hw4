@@ -6,7 +6,6 @@ function CountdownTimer() {
     const [countdown, setCountdown] = useState(10);
     useEffect(() => {
         const interval = setInterval(() => {
-            console.log('hellllllllo')
             setCountdown((prev) => {
                 if (prev === 0) {
                     clearInterval(interval);
@@ -15,7 +14,6 @@ function CountdownTimer() {
                 return (prev - 1)
             });
         }, 1000);
-
         return () => clearInterval(interval)
     }, []);
 
